@@ -1,0 +1,51 @@
+/* app css stylesheet */
+
+body {
+    padding-top: 20px;
+}
+
+
+
+ul.specs {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.specs > li{
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+
+ul.specs > li > span{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+ul.specs dt {
+    font-weight: bold;
+}
+
+h1 {
+    border-bottom: 1px solid gray;
+}
+
+
+.m-bottom-20{
+    margin-bottom: 20px;
+}
+.form-control,.btn{
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+}
+.form-control-custom{
+    width: 350px;
+    padding-left: 15px;
+    height: 34px;
+}

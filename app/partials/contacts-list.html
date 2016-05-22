@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 m-bottom-20">
+            <div class="pull-left" search-form></div> 
+            <div class="pull-right" new-button></div> 
+
+        </div>
+
+        <div class="col-md-12">
+            <!--Body content-->
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Address</td>
+                        <td>Phone</td>
+                        <td>Operations</td>
+                    </tr>              
+                </thead>
+                <tbody class="contacts">
+                    <tr ng-repeat="contact in contacts | filter:query">
+                        <td>{{contact.name}}</td>
+                        <td>{{contact.address}}</td>
+                        <td>{{contact.phone}}</td>
+                        <td>
+                            <a href="#/contacts/{{contact.id}}/edit" class="btn btn-warning">Edit</a>
+                            <a href="#" ng-click="deleteContact(contact.id)"  class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+         
+          
+
+        </div>
+    </div>
+</div>
